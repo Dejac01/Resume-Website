@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      
+       
+        <div class="navContainer">
+        <button class="btnTop" onclick="uploadInfo('About')">About Me</button>
+        <button class="btnTop"onclick="uploadInfo('Experience')">Experience</button>
+        <button class="btnTop"onclick="uploadInfo('Education')">Education</button>
+        <button class="btnTop"onclick="uploadInfo('Additional')">Additional Info</button>
+        </div> 
+
+        <div class="mainContainer">
+            <h3 class="frontface"> Hello and welcome to my resume! Check out a few interesting facts about my professional career and journey. You can learn more and connect with me through these sites!
+              <ul class="list">
+              <li> <a href="https://www.clippings.me/dejac"> My Writing Portfolio</a></li>
+              <li> <a href="https://github.com/Dejac01">Github Portfolio</a></li>
+             <li> <a href="https://www.linkedin.com/in/deja-craft/">LinkedIn</a></li>
+            </h3>
+        </ul>
+        </div>
+
+        <h1 class="currentTitle"> </h1>
+
+        <div class="profileContainer">
+        <div class="profilePic"><img src="data:image/jpeg;base64,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" alt="" class="photo"></div>
+        <div class="description">
+            <p class="desc"> 
+                Hi! Im De`ja and im glad you`re here! I had a lot of fun creating this resume site and hope you find out some interesting facts about myself. I throughly enjoy coding and proramming and watching code come to life. I hope to enter the field of game development, specifically within sports. I also enjoy writing! (check out the link above to my portfolio). I am a Computer Science major, Mentor, and lover of all things pink! I also enjoy volunteering and devoting my time to those in need and even recieved the presidential volunteer service award in 2020, during the coronavirus pandemic! Check out my resume and feel free to reach out! </p>
+       
+        </div>
+
+        </div>
+
+
+
+      <div class="bottomContainer"></div> 
+        
+            
+
+
+
+
+
+
+        <script src="app.js" async defer></script>
+    </body>
+</html>
